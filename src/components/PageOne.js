@@ -5,6 +5,12 @@ class PageOne extends Component {
     toPageTwo() {
         this.props.history.push('/pagetwo');
     }
+    componentDidMount() {
+        alert("PageOne created");
+    }
+    componentWillUnmount() {
+        alert("PageOne destroyed");
+    }
 
     render() {
         return (
